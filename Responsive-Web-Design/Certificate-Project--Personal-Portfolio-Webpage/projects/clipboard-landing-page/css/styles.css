@@ -1,0 +1,336 @@
+html {
+	font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Bai Jamjuree', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: hsl(201, 11%, 66%);
+  margin: 0;
+  padding: 0;
+}
+header, main, footer {
+  padding: 0 30px;
+  min-width: 280px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1,h2,h3 {
+  color: hsl(210, 10%, 33%);
+  padding: 0 20px;
+  line-height: 1.2;
+}
+#hero {
+  background: url(../images/bg-header-mobile.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#hero header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero img {
+  width: 80px;
+  padding: 50px 0 20px;
+}
+h1 {
+  font-size: 2.4rem;
+}
+.buttons {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 100%;
+  max-width: 300px;
+  height: 4rem;
+  margin: 20px auto;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 300ms;
+}
+button:hover {
+  transition-delay: 100ms;
+  transform: translateY(-5px);
+}
+button:active {
+  transition: transform 100ms;
+  transform: scale(0.97) translateY(-5px);
+}
+button[class~="btn-1"] {
+  background: hsl(171, 66%, 44%);
+  box-shadow: 0 3px hsl(171, 66%, 32%);
+}
+button[class~="btn-1"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5rem;
+  z-index: -1;
+  box-shadow: 0 15px 10px hsla(171, 66%, 32%, 0.4);
+}
+button[class~="btn-2"] {
+  background: hsl(233, 100%, 69%);
+  box-shadow: 0 3px hsl(233, 100%, 58%);
+}
+button[class~="btn-2"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5rem;
+  z-index: -1;
+  box-shadow: 0 15px 10px hsla(233, 100%, 58%, 0.4);
+}
+.sections-header {
+  max-width: 600px;
+  margin: auto;
+}
+.sections-header:not(#main-header) {
+  padding-top: 50px;
+}
+#feature-snippet {
+  overflow: hidden;
+}
+#feature-snippet img {
+  max-width: 100%;
+  margin: 20px auto;
+}
+.article-wrap article:not(:first-child) {
+  padding-top: 10px;
+}
+.article-wrap {
+  width: 80%;
+  margin: auto;
+}
+#feature-access img {
+  max-width: 100%;
+  margin: 20px auto;
+}
+#feature-workflow .sections-header {
+  margin-bottom: 50px;
+}
+#feature-workflow .article-wrap article:not(:first-child) {
+  padding-top: 20px;
+}
+#feature-companyLogos {
+  padding-top: 50px;
+}
+#feature-companyLogos .companyLogos {
+  padding: 10px;
+}
+#feature-companyLogos img {
+  display: block;
+  margin: 30px auto;
+}
+#feature-bottomLinks {
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #f1f5f9;
+}
+#footer .footer-logo {
+  width: 50px;
+  margin: 20px;
+}
+#footer .about {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, auto);
+}
+#footer .about a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+#footer .about a:hover {
+  text-decoration: underline;
+}
+#footer .about a:active {
+  color: hsl(201, 11%, 40%);
+}
+.social-links {
+  width: 150px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-links a {
+  transition: transform 300ms 100ms;
+  cursor: pointer;
+}
+.social-links a:hover {
+  transform: translateY(-5px);
+}
+.social-links img {
+	vertical-align: middle;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 30px auto 10px;
+}
+.attribution span {
+  display: block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*		Media Queries		*/
+
+@media (min-width: 600px) {
+  html {
+    font-size: 10.7px;
+	}
+  .attribution span {
+    display: inline;
+  }
+  #hero {
+    background: url(../images/bg-header-desktop.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  button {
+    width: 250px;
+    margin: 20px 10px; 
+  }
+  .article-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    width: 95%;
+  }
+  .article-wrap article {
+    flex-basis: 40%;
+  }
+  #feature-workflow .article-wrap article:not(:first-child), .article-wrap article:not(:first-child) {
+    padding-top: 0;
+  }
+  #feature-workflow img {
+    width: auto;
+    height: 30px;
+  }
+  #feature-companyLogos .companyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #feature-companyLogos .companyLogos img {
+    max-width: 25%;
+    margin: 0;
+  }
+  
+}
+
+@media (min-width: 760px) {
+  footer {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 1024px;
+  }
+  #footer .footer-logo {
+    width: 50px;
+    margin-right: 50px;
+  }
+  #footer .about {
+    gap: 10px 30px;
+    grid-template-rows: repeat(3, auto);
+  }
+  #footer .about a {
+    margin: 0;
+  }
+  .social-links {
+    margin: 0 0 0 auto;
+  }
+
+}
+@media (min-width: 900px) {
+  html {
+		font-size: 11.4px;
+	}
+  #hero img {
+    width: 100px;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  #snippet-container {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  #snippet-container #computerImg-wrap {
+    flex-basis: 53%;
+    position: relative;
+    left: -2.2%;
+    transition: left 500ms 100ms;
+  }
+  #snippet-container #computerImg-wrap:hover {
+    left: 1%;
+  }
+  .article-wrap {
+    width: 85%;
+  }
+  #snippet-container .article-wrap {
+    flex-direction: column;
+    flex-basis: 47%;
+    padding: 0 100px 0 50px;
+    text-align: left;
+  }
+  #snippet-container .article-wrap h3 {
+    padding: 0;
+  }
+  #snippet-container .article-wrap article:not(:first-child) {
+    padding-top: 10px;
+  }
+  #feature-workflow .article-wrap {
+    display: flex;
+    gap: 30px;
+  }
+  #feature-workflow .article-wrap article {
+    flex: 1;
+  }
+  #feature-companyLogos .companyLogos img {
+    max-width: 15%;
+  }
+  #footer .about {
+    grid-template-rows: repeat(2, auto);
+  }
+
+}

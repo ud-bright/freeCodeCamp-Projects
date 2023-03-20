@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="title">Bright Concept Survey Form</h1>
+			<p id="description">
+				Thank you for taking the time to help us improve the platform
+			</p>
+			<form id ="survey-form">
+				<div>
+					<label for="name" id="name-label">Name</label>
+					<input class="box" type="text" name="name" id="name" placeholder="Enter your name" required />
+				</div>
+				<div>
+					<label for="email" id="email-label">Email</label>
+					<input class="box" type="email" name="email" id="email" placeholder="Enter your Email" required />
+				</div>
+				<div>
+					<label for="number" id="number-label">Age (optional)</label>
+					<input class="box" type="number" name="number" id="number" placeholder="Your Age" min="12" max="120" />
+				</div>
+				<div>
+					<label for="">Which option best describes your role?</label>
+					<select name="role" id="dropdown">
+						<option disabled selected value="">Select current role</option>
+						<option value="student">Student</option>
+						<option value="working">Working</option>
+						<option value="part-timer">Part-time Learner</option>
+						<option value="notSay">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div>
+					<label for="">Would you recommend Bright Concept to a friend?</label>
+					<label>
+						<input type="radio" name="recommendation" value="definitly" checked />
+						Definitely
+					</label>
+					<label>
+						<input type="radio" name="recommendation" value="maybe" />
+						Maybe
+					</label>
+					<label>
+						<input type="radio" name="recommendation" value="no" />
+						Not sure
+					</label>
+				</div>
+				<div>
+					<label for="">What is your favorite feature of Bright Concept?</label>
+					<select name="role" id="favFeature">
+						<option disabled selected value="">Select an option</option>
+						<option value="challenges">Challenges</option>
+						<option value="projects">Projects</option>
+						<option value="community">Community</option>
+						<option value="openSource">Open Source</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div>
+					<label for="">What would you like to see improved? (check all that apply)</label>
+					<label>
+						<input type="checkbox" name="areaForImprove" value="front-end-projects" />
+						Front-end Projects
+					</label>
+					<label>
+						<input type="checkbox" name="areaForImprove" value="back-end-projects" />
+						Back-end Projects
+					</label>
+					<label>
+						<input type="checkbox" name="areaForImprove" value="data-visualization" />
+						Data Visualization
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="challenges" />
+						Challenges
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="open-source-community" />
+						Open Source Community
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="gitter-help-rooms" />
+						Gitter help rooms
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="videos" />
+						Videos
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="city-meetups" />
+						City Meetups
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="wiki" />
+						Wiki
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="forum" />
+						Forum
+					</label><label>
+						<input type="checkbox" name="areaForImprove" value="additional-courses" />
+						Additional Courses
+					</label>
+				</div>
+				<div>
+					<label for="comment" id="comment-label">Any comments or suggestions?</label>
+					<textarea name="comment" rows="5" cols="50" id="comment" placeholder="Enter your comment here..."></textarea>
+				</div>
+				
+				<input type="submit" id="submit" value="Submit" />
+				
+			</form>
+		</div>
+	</body>
+</html>

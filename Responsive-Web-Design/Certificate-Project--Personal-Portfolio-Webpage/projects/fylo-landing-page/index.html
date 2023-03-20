@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;600;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/9b73c04958.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+	</head>
+
+	<body>
+		<header id="header">
+			<div id="header-main-wrap">
+				<section id="header-main">
+					<div class="img-wrapper"><img src="./images/logo.svg" class="logo" id="header-img" alt="logo" /></div>
+					<nav id="nav-bar">
+						<ul>
+							<li><a class="nav-link" href="#features">Features</a></li>
+							<li><a class="nav-link" href="#footer">Team</a></li>
+							<li><a class="nav-link" href="#sign-up">Sign In</a></li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+			<section id="hero">
+				<div class="img-wrap">
+					<img src="./images/illustration-1.svg" alt="illustration-1" />
+				</div>
+				<div id="hero-desc-wrap">
+					<h1>All your files in one secure location, accessible anywhere.</h1>
+					<p class="text">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+					<form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+						<input type="email" name="email" id="email" placeholder="Enter your email..." required>
+						<input type="submit" id="submit" class="btn" value="Get Started">
+					</form>
+				</div>
+			</section>
+		</header>
+		<main>
+			<div>
+				<section id="features">
+					<div class="img-wrap">
+						<img src="./images/illustration-2.svg" alt="illustration-2" />
+					</div>
+					<div id="features-content-wrap">
+						<h3>Stay productive, wherever you are</h3>
+						<p class="text">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+						<p class="text">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+						<a id="how-it-works"><span>See how Fylo works</span> <img src="./images/icon-arrow.svg" alt="icon-arrow" /></a>
+						<article class="testimonial">
+							<img src="./images/icon-quotes.svg" alt="icon-quotes" class="icon" />
+							<p class="text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+							<div class="profile">
+								<div class="profile-img-wrap">
+									<img class="profile-img" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" />
+								</div>
+								<div class="profile-details">
+									<div class="profile-name">Kyle Burton</div>
+									<div class="profile-title">Founder &amp; CEO, Huddle</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<div id="sign-up-wrap">
+				<section id="sign-up">
+					<div id="sign-up-text-wrap">
+						<h3>Get early access today</h3>
+						<p class="text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+					</div>
+					<form id="form-cta" action="https://www.freecodecamp.com/email-submit" method="post">
+						<input type="email" name="email" id="email-cta" placeholder="email@example.com" required>
+						<input type="submit" id="submit-cta" class="btn" value="Get Started For Free">
+					</form>
+				</section>
+			</div>
+		</main>
+		<div id="footer-wrap">
+			<footer id="footer">
+				<div class="img-wrapper">
+					<img src="./images/logo-white.svg" alt="logo" />
+				</div>
+				<div class="footer-grid">
+					<section class="contact-details">
+						<p><img src="./images/icon-phone.svg" alt="icon-phone" /> Phone: +1-543-123-4567</p>
+						<p><img src="./images/icon-email.svg" alt="icon-email" /> example@fylo.com</p>
+					</section>
+					<ul class="about-us">
+						<li><a>About Us</a></li>
+						<li><a>Jobs</a></li>
+						<li><a>Press</a></li>
+						<li><a>Blog</a></li>
+					</ul>
+					<ul class="contact-us">
+						<li><a>Contact Us</a></li>
+						<li><a>Terms</a></li>
+						<li><a>Privacy</a></li>
+					</ul>
+					<section class="social-links">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+					</section>
+				</div>
+				<div class="attribution">
+					<span class="challenge">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> <span class="author">Coded by <a href="#">Udoka Agbasimalo</a>.</span>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+</html>
